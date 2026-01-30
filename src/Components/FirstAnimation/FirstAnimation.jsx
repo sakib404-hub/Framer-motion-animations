@@ -12,6 +12,8 @@ const FirstAnimation = () => {
                 transition={{
                     duration: 6,
                     delay: 1,
+                    repeat: Infinity,
+                    ease: 'anticipate'
                 }}
                 className='h-50 w-50 border-2 border-black bg-green-500 text-white'>
                 Box!

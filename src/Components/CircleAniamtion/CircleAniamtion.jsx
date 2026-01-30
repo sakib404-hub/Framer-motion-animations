@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { anticipate, easeInOut, motion } from 'motion/react';
 
 const CircleAniamtion = () => {
     return (
@@ -11,7 +11,9 @@ const CircleAniamtion = () => {
                 }}
                 transition={{
                     duration: 5,
-                    delay: 3
+                    delay: 3,
+                    repeat: Infinity,
+                    ease: 'easeInOut'
                 }}
                 className="h-50 w-50 bg-lime-400 rounded-full flex items-center justify-center"
             >
